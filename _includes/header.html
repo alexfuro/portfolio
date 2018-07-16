@@ -3,7 +3,9 @@
     <button class='dropdown-btn'>Nav</button>
     <ul class='navbar'>
       {% for page in site.pages %}
-        <li><a href='{{ page.url }}'> {{ page.title }}</a></li>
+        {% if page.title %}
+          <li><a href='{{ page.url }}'> {{ page.title }}</a></li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
