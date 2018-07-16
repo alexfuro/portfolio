@@ -1,3 +1,11 @@
 <header>
-  <p>My header</p>
+  <div class='dropdown'>
+    <button onclick='console.log('click')' class='dropdown-btn'>Nav</button>
+    <ul class='navbar'>
+      {% for page in site.pages %}
+        <li><a href='{{ page.url }}'> {{ page.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <h2 class="site-home"><a href='/'>{{ site.name }}</a></h2>
 </header>
