@@ -1,14 +1,16 @@
 $header-bg-color: #1976D2;
-$text-color: #F5F5F5;
-$text-hover-color: #616161;
-$mobile-nav-color: #EEEEEE;
+$text-color-light: #F5F5F5;
+$text-color-dark: #616161;
+$light-bg-color: #EEEEEE;
 
 header {
-  padding: 10px;
+  height: 43px;
+  line-height: 43px;
+  padding: 0 15px;
   background: $header-bg-color;
   a {
-    font-size: 1.3em;
-    color: $text-color;
+    font-size: 1.2em;
+    color: $text-color-light;
   }
 }
 .dropdown {
@@ -18,22 +20,24 @@ header {
   display: none;
   height: 33px;
   width: 43px;
+  border: none;
+  background-color: $light-bg-color;
+  font-size: 1.02em;
 }
 .navbar {
   list-style: none;
   li {
     display: inline-block;
-    padding: 0 5px;
-    border-radius: 8%;
+    padding-left: 5px;
     a {
       line-height: 1.3em;
-    }
-    a:hover {
-      color: $text-hover-color;
     }
   }
   li:hover {
     background: white;
+    a {
+      color: $text-color-dark;
+    }
   }
 }
 header:after {
@@ -44,13 +48,13 @@ header:after {
 .mobile-nav {
   display: block;
   position: absolute;
-  right: 10px;
+  right: 15px;
   width: 80px;
-  background-color: $mobile-nav-color;
+  background-color: $light-bg-color;
   li {
     display: block;
     a {
-      color: $text-hover-color;
+      color: $text-color-dark;
     }
   }
 }
