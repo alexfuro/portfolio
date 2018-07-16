@@ -1,6 +1,7 @@
 $header-bg-color: #1976D2;
 $text-color: #F5F5F5;
 $text-hover-color: #616161;
+$mobile-nav-color: #EEEEEE;
 
 header {
   padding: 10px;
@@ -15,6 +16,8 @@ header {
 }
 .dropdown-btn {
   display: none;
+  height: 33px;
+  width: 43px;
 }
 .navbar {
   list-style: none;
@@ -37,6 +40,19 @@ header:after {
   content: "";
   display: table;
   clear: right;
+}
+.mobile-nav {
+  display: block;
+  position: absolute;
+  right: 10px;
+  width: 80px;
+  background-color: $mobile-nav-color;
+  li {
+    display: block;
+    a {
+      color: $text-hover-color;
+    }
+  }
 }
 @media only screen and (max-width: 600px) {
   .dropdown-btn {
