@@ -1,0 +1,20 @@
+$footer-bg-color: #546E7A;
+$text-color-light: #F5F5F5;
+$text-color-dark: #616161;
+
+footer {
+  height: 44px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: $footer-bg-color;
+  .footer-links {
+    li {
+      display: inline-block;
+      padding: 10px 5px;
+      a {
+        color: $text-color-light;
+      }
+    }
+  }
+}
