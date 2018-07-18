@@ -1,14 +1,11 @@
-$profile-card-bg: #546E7A;
-$profile-card-text: #F5F5F5;
-
 .profile-card {
   width: 70%;
   padding: 25px 20px;
   margin: 0 auto;
-  background-color: $profile-card-bg;
+  background-color: $base-color;
   box-shadow: 0 16px 33px -10px #616161;
   p {
-    color: $profile-card-text;
+    color: $text-color-light;
   }
   .profile-header {
     p {

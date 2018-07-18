@@ -1,14 +1,10 @@
-$footer-bg-color: #546E7A;
-$text-color-light: #F5F5F5;
-$text-color-dark: #616161;
-
 footer {
   position: absolute;
   bottom: 0;
   height: 44px;
   width: 100%;
   padding: 0 15px;
-  background-color: $footer-bg-color;
+  background-color: $base-color;
   .footer-links {
     li {
       display: inline-block;

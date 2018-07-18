@@ -1,13 +1,8 @@
-$header-bg-color: #1976D2;
-$text-color-light: #F5F5F5;
-$text-color-dark: #616161;
-$light-bg-color: #EEEEEE;
-
 header {
   height: 43px;
   line-height: 43px;
   padding: 0 15px;
-  background: $header-bg-color;
+  background: $base-color;
   a {
     font-size: 1.2em;
     color: $text-color-light;
@@ -21,7 +16,7 @@ header {
   height: 33px;
   width: 43px;
   border: none;
-  background-color: $light-bg-color;
+  background-color: $base-highlight;
   font-size: 1.02em;
 }
 .navbar {
@@ -50,7 +45,7 @@ header:after {
   position: absolute;
   right: 15px;
   width: 80px;
-  background-color: $light-bg-color;
+  background-color: $base-highlight;
   li {
     display: block;
     a {
