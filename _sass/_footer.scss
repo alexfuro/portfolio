@@ -3,9 +3,10 @@ $text-color-light: #F5F5F5;
 $text-color-dark: #616161;
 
 footer {
+  position: absolute;
+  bottom: 0;
   height: 44px;
-  width: auto;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 15px;
   background-color: $footer-bg-color;
   .footer-links {
