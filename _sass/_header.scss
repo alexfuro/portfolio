@@ -52,6 +52,7 @@ header:after {
   background-color: $base-highlight;
   li {
     display: block;
+    padding-left: 10px;
     a {
       color: $text-color-dark;
     }
@@ -63,5 +64,15 @@ header:after {
   }
   .navbar {
     display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-bar {
+    width: 100%;
+  }
+  header {
+    a {
+      font-size: 1.05em;
+    }
   }
 }
