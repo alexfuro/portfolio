@@ -1,0 +1,80 @@
+.project-card {
+  width: 50%;
+  margin: 50px auto;
+  background-color: $base-highlight;
+  box-shadow: 0 25px 33px -25px #616161;
+  color: $text-color-dark;
+  border-radius: 16px;
+}
+.project-head {
+  background-color: $base-color;
+  border-radius: 16px 16px 0 0;
+}
+.project-title {
+  margin: 0;
+  min-height: 55px;
+  margin-left: 20px;
+  font-size: 1.4em;
+  line-height: 55px;
+  color: $text-color-light;
+  vertical-align: bottom;
+  float: left;
+}
+.project-links {
+  list-style: none;
+  clear: left;
+  margin: 0;
+  padding: 0;
+}
+.project-links li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.project-links a {
+  color: $text-color-light;
+  font-size: 1.2em;
+}
+.project-details {
+  width: 100%;
+  padding: 25px 0px;
+}
+.project-descrip {
+  max-width: 90%;
+  font-size: 1.12em;
+  margin: 20px auto 0 auto;
+}
+.project-image {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+.project-tools{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: right;
+  list-style: none;
+  background-color: $base-color-medium;
+  border-radius: 0 0 16px 16px;
+}
+.project-tools li {
+  margin: 15px 0;
+  padding-left: 20px;
+  display: inline-block;
+}
+@media only screen and (max-width: 900px) {
+  .project-card {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .project-card {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .project-card {
+    width: 90%;
+  }
+}
