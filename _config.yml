@@ -3,3 +3,13 @@ linkedin: https://www.linkedin.com/in/alexander-furones
 github: alexfuro
 github_url: https://www.github.com/alexfuro
 email: afurones43@gmail.com
+
+collections:
+  projects:
+
+defaults:
+  scope:
+    path: "/projects"
+    type: projects
+  values:
+    layout: default
