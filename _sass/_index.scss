@@ -1,76 +1,83 @@
 .profile-card {
-  width: 70%;
-  padding: 25px 20px;
+  width: 65%;
   margin: 0 auto;
   background-color: $base-color;
   box-shadow: 0 16px 33px -10px #616161;
-  p {
-    color: $text-color-light;
+  color: $text-color-light;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  letter-spacing: 2px;
+  border-radius: 16px;
+  .profile-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
   }
   .profile-header {
     p {
+      padding: 15px 25px 0 25px;
       text-align: right;
     }
   }
   .profile-image {
     display: inline-block;
     width: 40%;
-    padding: 20px 0;
     img {
       width: 100%;
+      border-radius: 16px;
     }
   }
   .profile-summary {
     display: inline-block;
-    max-width: 59%;
-    vertical-align: top;
+    max-width: 60%;
+    padding-left: 20px;
     p {
-      padding-top: 20px;
-      text-align: right;
+      padding-bottom: 15px;
+      text-align: justify;
+    }
+    a {
+      color: $text-color-standout;
+      text-decoration: underline;
     }
   }
-}
-@media only screen and (max-width: 780px) {
-  .profile-card {
-    width: 85%;
+  .profile-footer {
+    width: 100%;
+    .social-links {
+      float: right;
+      padding-right: 25px;
+      padding-bottom: 10px;
+      li {
+        display: inline;
+        list-style: none;
+        padding-left: 5px;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .profile-footer:after {
+    content: "";
+    display: table;
+    clear: right;
   }
 }
-@media only screen and (max-width: 650px) {
-  .profile-card {
-    width: 95%;
-  }
-}
-@media only screen and (max-width: 574px) {
+
+@media only screen and (max-width: 1100px) {
   .profile-card {
     width: 100%;
-    .profile-image {
-      display: block;
-      width: 100%;
-      padding: 20px 0;
-      img {
-        display: block;
-        max-height: 300px;
-        width: auto;
-        margin: 0 auto;
-      }
-    }
-    .profile-summary {
-      display: block;
-      max-width: 100%;
-      p {
-        text-align: justify;
-      }
-    }
   }
 }
-@media only screen and (max-width: 340px) {
-  .profile-card {
+@media only screen and (max-width: 720px) {
+  .profile-body {
+    display: inline-block;
     .profile-image {
-      img {
-        max-height: 300px;
-        width: 100%;
-        margin: 0;
-      }
+      width: 100%;
+    }
+    .profile-summary {
+      max-width: 100%;
+      padding-left: 0;
     }
   }
 }
