@@ -1,12 +1,16 @@
 header {
-  height: 43px;
-  line-height: 43px;
+  height: 53px;
+  line-height: 53px;
   padding: 0 15px;
   background: $base-color;
   a {
-    font-size: 1.2em;
+    font-size: 1.15em;
     color: $text-color-light;
   }
+}
+.header-bar {
+  width: 80%;
+  margin: 0 auto;
 }
 .dropdown {
   float: right;
@@ -14,7 +18,7 @@ header {
 .dropdown-btn {
   display: none;
   height: 33px;
-  width: 43px;
+  width: 53px;
   border: none;
   background-color: $base-highlight;
   font-size: 1.02em;

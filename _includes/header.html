@@ -1,13 +1,15 @@
 <header>
-  <div class='dropdown'>
-    <button class='dropdown-btn'>Nav</button>
-    <ul class='navbar'>
-      {% for page in site.pages %}
-        {% if page.title %}
-          <li><a href='{{ page.url }}'> {{ page.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+  <div class="header-bar">
+    <div class='dropdown'>
+      <button class='dropdown-btn'>Nav</button>
+      <ul class='navbar'>
+        {% for page in site.pages %}
+          {% if page.title %}
+            <li><a href='{{ page.url }}'> {{ page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <h2 class="site-home"><a href='/'>{{ site.name }}</a></h2>
   </div>
-  <h2 class="site-home"><a href='/'>{{ site.name }}</a></h2>
 </header>
