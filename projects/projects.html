@@ -1,0 +1,30 @@
+---
+layout: default
+title: Projects
+permalink: /projects
+---
+
+{% for project in site.projects reversed %}
+  <div class="project-card">
+    <div class="project-head">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <ul class="project-links">
+        {% if project.demo_url %}
+          <li><a href="{{ project.demo_url }}">Demo</a></li>
+        {% endif %}
+        {% if project.source_url %}
+          <li><a href="{{ project.source_url }}">Source</a></li>
+        {% endif %}
+        </ul>
+    </div>
+    <div class="project-details">
+        <img src="{{ project.img_path }}" class="project-image" alt="project screenshot">
+        <p class="project-descrip">{{ project.description }}</p>
+    </div>
+    <ul class="project-tools">
+        {% for tool in project.tools %}
+          <li>{{ tool }}</li>
+        {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
