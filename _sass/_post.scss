@@ -1,0 +1,43 @@
+.post-container {
+  width: 60%;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 16px 33px -10px $base-shadow;
+  border-radius: 16px;
+}
+.post-content {
+  color: $text-color-dark;
+  h2 {
+    margin: 15px 0;
+  }
+  p {
+    margin: 25px 0;
+    line-height: 1.4em;
+    font-size: 1.05em;
+  }
+  a {
+    color: $base-color;
+    text-decoration: underline;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .post-container {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .post-container {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .post-container {
+    width: 100%;
+  }
+  .post-content {
+    p {
+      font-size: 1em;
+      text-align: justify;
+    }
+  }
+}
