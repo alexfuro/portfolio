@@ -1,6 +1,6 @@
 ---
 title:  "Olaf's Social-Book"
-description: "This project is a Facebook clone done for The Odin Project as part of the Ruby on Rails course. The app is specifically the backend and lacks the AJAX heavy frontend."
+description: "This is a Facebook clone done for The Odin Project as part of the Ruby on Rails course. The application is backend heavy and lacks the AJAX calls in the frontend."
 img_path: "../images/projects/odin_facebook.png"
 demo_url: "https://top-odin-facebook.herokuapp.com/"
 source_url: "https://github.com/alexfuro/TOP_odin_facebook"
