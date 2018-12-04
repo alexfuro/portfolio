@@ -10,10 +10,10 @@ permalink: /projects
         <h3 class="project-title">{{ project.title }}</h3>
         <ul class="project-links">
         {% if project.demo_url %}
-          <li><a href="{{ project.demo_url }}">Demo</a></li>
+          <li><a href="{{ project.demo_url }}" target="_blank">Demo</a></li>
         {% endif %}
         {% if project.source_url %}
-          <li><a href="{{ project.source_url }}">Source</a></li>
+          <li><a href="{{ project.source_url }}" target="_blank">Source</a></li>
         {% endif %}
         </ul>
     </div>
